@@ -1,4 +1,5 @@
-function Card(tier, cost, benefit, points) {
+function Card(id, tier, cost, benefit, points) {
+    this.id = id;
     this.tier = tier;
     this.cost = cost;
     this.benefit = benefit;

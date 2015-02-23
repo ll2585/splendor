@@ -11,17 +11,17 @@ function Game() {
     var fs = require('fs');
     var obj = JSON.parse(fs.readFileSync('cards.json', 'utf8'));
     for(var i = 0; i < obj.length; i++){
-        this.cards[obj[i].tier].push(new Card(obj[i].tier, obj[i].cost, obj[i].benefit, obj[i].points));
+        this.cards[obj[i].tier].push(new Card(i, obj[i].tier, obj[i].cost, obj[i].benefit, obj[i].points));
     }
     obj = JSON.parse(fs.readFileSync('nobles.json', 'utf8'));
     for(var i = 0; i < obj.length; i++){
-        this.nobles.push(new Noble(obj[i].cards, obj[i].points));
+        this.nobles.push(new Noble(i, obj[i].cards, obj[i].points));
     }
 };
 
 Game.prototype.num_cards = function() {
     var count = 0;
-    for (tier in this.cards){
+    for (var tier in this.cards){
         count += this.cards[tier].length;
     }
     return count
@@ -29,7 +29,7 @@ Game.prototype.num_cards = function() {
 
 Game.prototype.num_chips = function() {
     var count = 0;
-    for (jewel in this.chips){
+    for (var jewel in this.chips){
         count += this.chips[jewel];
     }
     return count
