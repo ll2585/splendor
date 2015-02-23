@@ -1,0 +1,42 @@
+[
+  {"cards":{
+    "blue": 3, "white": 3, "black": 3
+    }, "points": 3
+  },
+  {"cards":{
+    "blue": 3, "green": 3, "red": 3
+  }, "points": 3
+  },
+  {"cards":{
+    "green": 3, "white": 3, "black": 3
+  }, "points": 3
+  },
+  {"cards":{
+    "blue": 3, "white": 3, "green": 3
+  }, "points": 3
+  },
+  {"cards":{
+    "green": 3, "red": 3, "black": 3
+  }, "points": 3
+  },
+  {"cards":{
+    "blue": 4, "green": 4
+  }, "points": 3
+  },
+  {"cards":{
+    "red": 4, "green": 4
+  }, "points": 3
+  },
+  {"cards":{
+    "red": 4, "black": 4
+  }, "points": 3
+  },
+  {"cards":{
+    "black": 4, "white": 4
+  }, "points": 3
+  },
+  {"cards":{
+    "blue": 4, "white": 4
+  }, "points": 3
+  }
+]
