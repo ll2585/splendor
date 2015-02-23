@@ -21,5 +21,14 @@ suite('model', function(){
             assert.equal(g.get_cards()['tier 2'].length, 30);
             assert.equal(g.get_cards()['tier 3'].length, 20);
         });
+        test('should have 7 chips of each color and 5 gold', function(){
+            assert.equal(g.num_chips(), 40);
+            assert.equal(g.get_chips()['white'], 7);
+            assert.equal(g.get_chips()['black'], 7);
+            assert.equal(g.get_chips()['green'], 7);
+            assert.equal(g.get_chips()['red'], 7);
+            assert.equal(g.get_chips()['blue'], 7);
+            assert.equal(g.get_chips()['gold'], 5);
+        });
     });
 });
